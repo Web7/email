@@ -1,34 +1,88 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes">
     <title>Title</title>
     <style>
         body {
             font-family: Arial;
-            font-size: 14px;
+            font-size: 12px;
             font-weight: 400;
             line-height: 16px;
             color: #5c5c5c;
+            padding: 10px;
+            margin: 0;
+        }
+
+        .light-container {
+            padding-bottom: 35px;
+        }
+
+        .title {
+            font-size: 16px;
+            line-height: 23px;
+            padding: 0 23px 16px 23px;
+        }
+
+        .first-text {
+            padding: 5px 0 16px 0;
+        }
+
+        .d-none {
+            display: none;
+        }
+
+        @media (min-width: 700px) {
+            body {
+                font-size: 14px;
+                padding: 15px;
+            }
+
+            .light-container {
+                padding-bottom: 50px;
+            }
+
+            .first-text {
+                padding: 10px 0 20px 0;
+            }
+
+            .title {
+                font-size: 20px;
+                line-height: 23px;
+                padding: 0 47px 38px 47px;
+            }
+
+            .d-md-none {
+                display: none !important;
+            }
+
+            .d-md-table {
+                display: table !important;
+            }
+
+            .d-md-block {
+                display: block !important;
+            }
         }
     </style>
 
-<body style="padding: 15px">
-<div style="width: 600px; margin: 0 auto;">
+<body>
+<div style="max-width: 600px; margin: 0 auto;">
     <table align="center" border="0" width="100%">
         <tbody>
         <tr>
-            <td style="padding: 10px 0 20px 0" align="center">
+            <td class="first-text" align="center">
                 Thank you for joining!
             </td>
         </tr>
         <tr>
-            <td style="font-size: 20px; line-height: 23px; padding-bottom: 38px" align="center">
-                Start browsing <b>photos</b> and <b>videos</b> of hot single<br/>ladies from your area RIGHT NOW!
+            <td class="title" align="center">
+                Start browsing <b>photos</b> and <b>videos</b> of hot single <span class="d-md-block">ladies from your area RIGHT NOW!</span>
             </td>
         </tr>
         <tr>
-            <td style="padding-bottom: 50px">
-                <table align="center" width="100%">
+            <td>
+                <table align="center" width="100%" class="d-none d-md-table" style="padding-bottom: 50px">
                     <tbody>
                     <tr>
                         <td align="center">
@@ -49,11 +103,36 @@
                     </tr>
                     </tbody>
                 </table>
+                <table align="center" width="100%" class="d-md-none">
+                    <tbody>
+                    <tr>
+                        <td align="center" style="padding-bottom: 35px; font-size: 14px;">
+                            <img src="https://web7.github.io/email/1.jpg" alt="" title="" width="160" height="190"/>
+                            <p style="margin: 5px 0 9px 0;">Emma, 30</p>
+                            <a href="#" target="_blank" style="background: #1877F2; border-radius: 10px; display: inline-block; width: 140px; height: 35px; color: #ffffff; text-decoration: none; line-height: 35px;"><b>View PHOTOS</b></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" style="padding-bottom: 35px; font-size: 14px;">
+                            <img src="https://web7.github.io/email/2.jpg" alt="" title="" width="160" height="190"/>
+                            <p style="margin: 5px 0 9px 0;">Emma, 30</p>
+                            <a href="#" target="_blank" style="background: #1877F2; border-radius: 10px; display: inline-block; width: 140px; height: 35px; color: #ffffff; text-decoration: none; line-height: 35px;"><b>View PHOTOS</b></a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center" style="padding-bottom: 35px; font-size: 14px;    ">
+                            <img src="https://web7.github.io/email/3.jpg" alt="" title="" width="160" height="190"/>
+                            <p style="margin: 5px 0 9px 0;">Emma, 30</p>
+                            <a href="#" target="_blank" style="background: #1877F2; border-radius: 10px; display: inline-block; width: 140px; height: 35px; color: #ffffff; text-decoration: none; line-height: 35px;"><b>View PHOTOS</b></a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
             </td>
         </tr>
         <tr>
-            <td align="center" style="padding-bottom: 50px">
-                <table width="500px">
+            <td align="center" class="light-container">
+                <table style="max-width: 500px">
                     <tbody>
                     <tr>
                         <td style="background: #F3F8FD; border-radius: 15px; padding: 19px 27px;" align="center">
